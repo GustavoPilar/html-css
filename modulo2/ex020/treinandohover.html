@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando Menus</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: green;
+            height: 100px;
+            display: flex;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p,a {
+            display: block;
+        }
+
+        div:hover {
+            color: white;
+        }
+
+        main {
+            background-color: lightgray;
+            height: 550px;
+        }
+
+        footer {
+            background-color: gray;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            Login
+            <p><a href="#">Fazer login</a></p>
+        </div>
+        <div>
+            Cadastrar
+            <p><a href="#">Fazer o cadastro</a></p>
+        </div>
+        <div>
+            Quem somos nós?
+            <p><a href="#">Quem somos nós?</a></p>
+        </div>
+    </header>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat esse dignissimos consequuntur quibusdam architecto illo similique nobis eaque ad perspiciatis, voluptatum at qui amet aperiam excepturi non aut recusandae iure?
+        </p>
+    </main>
+    <footer>
+        <p>
+            Copyright &copy;
+        </p>
+    </footer>
+</body>
+</html>

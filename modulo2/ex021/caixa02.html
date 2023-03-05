@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px 10px 0px;
+            /* top-left; top-right; bottom-right; bottom-left;
+            Quando usamos apenas dois valores, irá valer o primeiro valor para top-left e bottom-right e o segundo valor irá valor para o top-right e bottom-left. ex: border-radius: 20px 5px;
+            Se colocarmos box-shadow, a sombra irá ficar com o formato do border-radius que colocamos; */
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.324);
+        }
+
+        nav {
+            background-color: rgb(75, 75, 75);
+            padding: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315); 
+            /* deslocamento horizontal (x); deslocamento vertical (y); espalhamento; sombra; 
+            Se o deslocamento for negativo: (x) para cima; (y) para baixo
+            se colocar "inset" a sombra vai para dentro do box. "outset" já é o padrão para fora */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px 5px 2px 5px;
+        }
+
+        article > aside {
+            background-color: rgb(145, 145, 145);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 4px;
+            margin: 0;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Políticas e Tecnologias</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, distinctio ipsum earum temporibus ad voluptas rem sapiente officiis. Rerum soluta assumenda, quos nulla quibusdam repudiandae optio similique reprehenderit incidunt laborum.
+                </p>
+                <aside>
+                    <p>Artigo escrito por josé da silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVídeo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 {
+            /* Precisa ter uma borda antes para que o border-image funcione */
+            border: 20px solid black;
+            padding: 10px;
+            border-image-source: url(borda.png); /* imagem na borda (fiz a borda no GIMP)*/
+            border-image-slice: 27; /* fatiar a borda */
+            border-image-repeat: repeat; /* Faz a borda se repetir. Também posso usar o stretch */
+
+            /* Shorthand é o border-image: ;
+            Source - slice - repeat */
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>

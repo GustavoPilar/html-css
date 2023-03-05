@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android' ;
+    src: url(fontes/idroid.otf) format(optentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #84E1AD;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #3CD983, #195835);
+    text-align: center;
+    color: white;
+    margin: -20px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    margin: 0px 10%;
+    border-radius: 0 0 10px 10px;
+}
+
+
+main h1, h2 {
+    font-family: 'android', Arial, Helvetica, sans-serif;
+    color: #326D4C;
+    text-transform: uppercase;
+}
+
+.history h1, p, picture {
+    padding: 0 20px 10px;
+}
+
+.history h1 {
+    padding-top: 10px;
+}
+
+.history h2 {
+    background-image: linear-gradient(to right, #C7EBD7, transparent);
+    margin: 0 20px;
+}
+
+.history p {
+    text-indent: 30px;
+}
+
+main picture img {
+    width: 98%;
+}
+
+main .bug img {
+    width: 300px;
+    margin: 0 35%;
+}
+
+main iframe {
+    border: #1A5C38 25px solid;
+    width: 96%;
+}
+
+main .learn {
+    background-color: #C5EBD6;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+main .learn > p:nth-child(1) {
+    background-color: #2FA866;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    text-indent: 0;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: #1A5C38;
+    color: #679C7E;
+    text-align: center;
+    padding: .5px;
+    height: 50px;
+}
+
+ footer a {
+    color: white;
+ }
