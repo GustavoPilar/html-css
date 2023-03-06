@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        #container {
+            position: relative; 
+            /* 
+            Todo box já tem por padrão a position relative, então não precisa colocar
+            */
+            height: 95vh;
+            padding: 10px;
+            background-color: purple;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            /* 
+            Colocamos o conteudo com o posicionamento absoluto. a regra é, o que ta pra fora "container" é o relativo e o que está para dentro "conteudo" é o absoluto
+
+            com aboslute, podemos trabalhar com duas propriedades muito importantes, que são: 
+
+            left (desde a borda esquerda do meu container até o top left (quina superior esquerda) do meu conteudo)
+            top (desde a borda de cima do meu container até o top left (quina superior esquerda) do meu conteudo)
+
+            podemos trabalhar com porcentagem, ao invés de pixel;
+
+            Se notarmos, não está centralizado, pois como eu expliquei ali em cima, ele usa a quina superior esquerda como referencia. Mas podemos usar o transform para que a referencia seja o meio do meu conteúdo mesmo
+            */
+
+            transform: translate(-50%, -50%);
+            /* 
+            A operação translate, faz que com possamos mexer tanto para direita quanto para a esquerda, o nosso conteudo.
+
+            usamos o primeiro valor para o eixo x e o segundo valor para o eixo y, funciona igual o margin
+
+            para deixarmos certinho, vamos usar porcentagem e tirar -50% do eixo x e -50% do eixo y e pronto, está centralizado.
+            */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
