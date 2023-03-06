@@ -4,31 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
 
     <style>
         body {
             height: 100vh;
+            /* 
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
-            
-            background-size:  cover;
+            background-repeat: no-repeat;
+             */
+
             /* 
+            background-size:  cover;
+
             Para o nosso caso aqui, o contain ele não vai ajudar muito porque ele vai deixar, depedendo da largura e da altura, umas bordas pretas ou a cor do teu body;
 
             cover ele vai dizer que vai cobrir, mesmo que tenha que dar um corte na imagem
             */
+
+            
+            /* 
+            background-attachment: fixed;
+
+            attachment significa travado em portugues e temos duas opções
+
+            scroll, onde o fundo vai rolar junto com o conteúdo
+            fixed, ele fica fixado na tela (juntando com o cover, fica um resultado bem legal)
+            */
+
+            /* 
+            Shorthand - backgorund
+            color > image > position > repeat > {size} > attachment
+
+            o size atualmente não funciona no shorthand, portanto basta tirar ele e em baixo colocar um background-size: cover;
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 10px;
+            text-align: justify;
         }
     </style>
 </head>
