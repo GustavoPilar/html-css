@@ -18,11 +18,21 @@
             /* 
             Para juntar as bordas dos nossos dados, colocamos border-collapse: collapse; pois o padrão é border-colapse: separate;
             */
+
+            border: 5px solid black;
+        }
+
+        tr.linha{
+            background-color: gray;
         }
 
         td { /* para que fique a borda nos nossos dados, colocamos no td, pois se colcoar table vai ficar em volta da tabela */
             border: 1px solid black;
             padding: 8px;
+        }
+
+        td.dado {
+            background-color: yellow;
         }
     </style>
 </head>
@@ -37,15 +47,16 @@
                 table header = cabeçalho da tabela
                 table data = dado de tabela
      -->
+
     <table>
-        <tr> <!-- Primeira linha -->
+        <tr class="linha"> <!-- Primeira linha -->
             <td>A1</td> <!-- Primeiro dado DA LINHA -->
             <td>B1</td> <!-- Segunda dado DA LINHA -->
             <td>C1</td> <!-- Terceiro dado DA LINHA -->
         </tr>
         <tr> <!-- Segunda linha -->
             <td>A2</td>
-            <td>B2</td>
+            <td class="dado">B2</td>
             <td>C2</td>
         </tr>
         <tr> <!-- Terceira linha -->
@@ -59,5 +70,20 @@
             <td>C4</td>
         </tr>
     </table>
+        <!-- !! IMPORTANTE !! 
+                Quando colocamos a tag td, o VSCode já completa para nós, porém podemos colocar sem a tag de fechamento, mas tome muito cuido, por que se esquecer de colocar a outra tag td e colocar o outro dado que deveria estar em outra coluna, vai aparecer na mesma célula td de cima. EXemplo do erro:
+            <table>
+                <tr class="linha">
+                    <td>A1
+                    <td>B1
+                    C1
+                </tr>
+            </table>
+
+            Por mais que a W3C diga que não precise fechar o td, feche, assim como o VSCode já completa para nós.
+
+            !! IMPORTANTE !! 
+            Sempre coloque na ordem semântica para que a tabela fique certa e não apareça erro na tela.
+        -->
 </body>
 </html>
