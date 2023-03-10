@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .cnome {
+            background-color: gray;
+        }
+
+        .cgrupo {
+            background-color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+
+        <colgroup>
+            <col class="amarelo">
+            <col class="cgrupo" span="2"> <!-- span="2" quer dizer duas colunas -->
+            <col class="cprof">
+        </colgroup>
+        <!-- 
+            No HTML5 podemos separar as colunas em grupos e fazer modificação apenas nelas. Vamos usar a tag (dentro da tabela) colgrop e dentro dela, o tanto de colunas que temos na nossa tabela. Veja o exemplo acima. E então, se voce ver no style, verá que temos modificações para a coluna nome, que está sendo representado pela classe/id cnome 
+        -->
+        
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>18</td>
+            <td>Web Developer</td>
+        </tr>
+        <tr>
+            <td>Gabrielly</td>
+            <td>F</td>
+            <td>17</td>
+            <td>Secretária</td>
+        </tr>
+        <tr>
+            <td>Patrícia</td>
+            <td>F</td>
+            <td>51</td>
+            <td>Dolar</td>
+        </tr>
+        <tr>
+            <td>Celso</td>
+            <td>M</td>
+            <td>68</td>
+            <td>Reserva do Bombeiro</td>
+        </tr>
+    </table>
+</body>
+</html>
