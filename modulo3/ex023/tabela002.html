@@ -14,6 +14,13 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th { /* Fazer o cabeçalho seguir a tabela, quando for grande; Não funciona em todos os navegadores, porém basta fazer o teste para ver se já funciona */
+            position: sticky; /* colável; grudável */
+            top: -1px;
+            background-color: gray;
         }
 
         thead, tfoot {
@@ -28,6 +35,23 @@
 
         .num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) { 
+            /* 
+            2n significa que de dois em dois, vai ficar com background color lightgray, ou seja, o famoso zebrado, para não se perder na tabela. Se eu quiser colocar de 3 em 3, posso colocar 3n ou algum número e em seguida o n "num+2".
+
+            também podemos colocar que todas as linhas impares fiquem com lightgray, então ao invés de 2n, colocamos odd;
+
+            odd = ímpar
+            even = par
+
+            exemplo:
+            tbody > tr:nth-child(odd){
+                background-color: lightgray
+            }
+            */
+            background-color: lightgray;
         }
 
         caption {
