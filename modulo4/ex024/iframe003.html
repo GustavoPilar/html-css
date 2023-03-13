@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nulla eligendi maxime voluptates perferendis deleniti modi atque, unde cupiditate et neque recusandae mollitia illum sint consectetur. Porro commodi dolorum necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsa error vel cum, quaerat natus soluta doloribus culpa laborum maxime! Dicta numquam et repellat voluptatem officiis. Perspiciatis exercitationem ipsa deleniti.
+    </p>
+
+    <ul> <!-- Quando clicarmos no link, pégina irá aparecer no iframe abaixo. Para isso, colocamos um name="" no meu iframe, lá em baixo ou onde eu quero que apareça, e então no link, ao invés de colocarmos target="_blank" para abrir em outra janela, vamos colcoar no target="" o name que colocamos no nosso iframe, nesse caso, target="frame" -->
+        <li><a href="extra/pag01.html" target="frame">Primeira página</a></li>
+        <li><a href="extra/pag02.html" target="frame">Segunda página</a></li>
+        <li><a href="extra/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores qui quia! Earum cum sint doloremque dolores magni! Nihil ullam odit odio laborum accusamus obcaecati. Eaque non earum autem ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut reiciendis pariatur quae provident voluptate exercitationem at quaerat, quo quos, voluptas maiores illum velit. Perferendis quae optio deleniti? Vitae, perferendis?
+    </p>
+
+    <iframe name="frame" src="" >
+        <p>Infelizmente seu navegador não é compativel</p>
+    </iframe>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusamus natus placeat reiciendis facilis totam officia beatae in odio tenetur, nam dolores assumenda, repellendus labore ut, vero a laudantium dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat modi cupiditate assumenda aspernatur reiciendis quia et nostrum. Distinctio vero alias nobis enim adipisci atque quis harum dolor laborum omnis.
+    </p>
+</body>
+</html>
